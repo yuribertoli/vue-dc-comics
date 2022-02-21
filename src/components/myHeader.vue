@@ -113,6 +113,9 @@ header {
       text-transform: uppercase;
       font-size: 0.7rem;
       padding: 0 10px;
+        &:hover {
+        background-color: azure;
+        }
     }
   }
 }
