@@ -11,7 +11,7 @@
       <div class="container">
         <ul>
           <li v-for="(info, index) in infos" :key="index">
-            <img :src="info.img" :alt="info.img">
+            <img :class="{'smaller': info.text == 'dc power visa'}" :src="info.img" :alt="info.img">
             <a :href="info.url">{{info.text}}</a>
           </li>
         </ul>
@@ -85,7 +85,7 @@ export default {
       align-items: center;
 
       img {
-      height: 50px;
+      height: 40px;
       width: auto;
       }
       a {
@@ -95,8 +95,11 @@ export default {
         white-space: nowrap;
         padding-left: 5px;
       }
-    }
-    
+      .smaller {
+        height: 30px;
+        width: auto;
+      }
+    } 
   }
 }
 
