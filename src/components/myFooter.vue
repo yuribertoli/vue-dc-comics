@@ -16,7 +16,7 @@
         </div>
 
         <div class="right-footer">
-
+          <img src="../assets/img/dc-logo-bg.png" alt="logo dc">
         </div>
 
       </div>
@@ -172,34 +172,54 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
   height: $heightRow3;
 
-  ul {
-    height: $heightRow3;
+  .container {
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  .left-footer {
     width: 40%;
-    padding: 40px 0;
 
-    li {
-      flex-basis: 33.333333%;
+      ul {
+      height: $heightRow3;
       display: flex;
-      flex-direction: column;
-      max-height: calc($heightRow3 - 60%);
+      flex-wrap: wrap;
+      padding: 40px 0;
 
-      h5 {
-        color: white;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-      a {
-        color: gray;
-        padding: 3px 0;
-        font-size: 0.6rem;
-        &:hover {
+      li {
+        flex-basis: 33.333333%;
+        display: flex;
+        flex-direction: column;
+        max-height: calc($heightRow3 - 60%);
+
+        h5 {
           color: white;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        a {
+          color: gray;
+          padding: 3px 0;
+          font-size: 0.6rem;
+          &:hover {
+            color: white;
+          }
         }
       }
+    } 
+  } 
+
+  .right-footer {
+    width: 60%;
+    position: relative;
+
+    img {
+      height: calc($heightRow3 + 50%);
+      width: auto;
+      position: absolute;
+      left: 20%;
+      top: -30%;
     }
-  }  
+  }
 }
 
 </style>
