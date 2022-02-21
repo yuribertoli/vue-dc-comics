@@ -23,7 +23,19 @@
     </div>
 
     <div class="bottom-footer">
-    
+
+      <div class="container">
+
+        <div class="sign-up">
+          <button>SIGN-UP NOW!</button>
+        </div>
+
+        <div class="social-media">
+
+        </div>
+
+      </div>
+
     </div>      
 
   </footer>
@@ -169,8 +181,6 @@ export default {
 <style scoped lang="scss">
 @import "../assets/css/variables.scss";
 .top-footer {
-  position: relative;
-  z-index: -2;
   background-image: url("../assets/img/footer-bg.jpg");
   height: $heightRow3;
 
@@ -220,7 +230,30 @@ export default {
       position: absolute;
       left: 20%;
       top: -30%;
-      z-index: -1;
+    }
+  }
+}
+
+.bottom-footer {
+  height: $heightRow1;
+  background-color: #303030;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+
+  .sign-up {
+    line-height: $heightRow1;
+
+    button {
+      background-color: transparent;
+      border: 2px solid $mainColor;
+      color: white;
+      padding: 10px 15px;
+      &:hover {
+        background-color: rgba(2,130,249,0.2);
+        cursor: pointer;
+      }
     }
   }
 }

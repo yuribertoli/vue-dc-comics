@@ -79,6 +79,8 @@ export default {
     display: flex;
     justify-content: space-around;
     height: $heightRow2;
+    position: relative;
+    z-index: 2;
 
     li {
       display: flex;
