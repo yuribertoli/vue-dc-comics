@@ -7,7 +7,10 @@
         <div class="left-footer">
           <nav>
             <ul>
-              <li></li>
+              <li v-for="(item, index) in colonne" :key="index">
+                <h5>{{item.titolo}}</h5>
+                <a v-for="(link, indice) in colonne[index].links" :key="indice" :href="link.url">{{link.nome}}</a>
+              </li>
             </ul>
           </nav>
         </div>
