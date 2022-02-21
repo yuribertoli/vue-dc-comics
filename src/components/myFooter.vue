@@ -170,7 +170,36 @@ export default {
 @import "../assets/css/variables.scss";
 .top-footer {
   background-image: url("../assets/img/footer-bg.jpg");
-  height: 300px;
+  height: $heightRow3;
+
+  ul {
+    height: $heightRow3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 40px 0;
+
+    li {
+      flex-basis: 33.333333%;
+      display: flex;
+      flex-direction: column;
+      max-height: calc($heightRow3 - 60%);
+
+      h5 {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      a {
+        color: gray;
+        padding: 3px 0;
+        font-size: 0.6rem;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }  
 }
 
 </style>
