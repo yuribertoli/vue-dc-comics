@@ -169,6 +169,8 @@ export default {
 <style scoped lang="scss">
 @import "../assets/css/variables.scss";
 .top-footer {
+  position: relative;
+  z-index: -2;
   background-image: url("../assets/img/footer-bg.jpg");
   height: $heightRow3;
 
@@ -218,6 +220,7 @@ export default {
       position: absolute;
       left: 20%;
       top: -30%;
+      z-index: -1;
     }
   }
 }
