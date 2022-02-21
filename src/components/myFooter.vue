@@ -32,6 +32,14 @@
 
         <div class="social-media">
 
+          <h3>FOLLOW US</h3>
+
+          <ul>
+            <li v-for="(item, index) in socials" :key="index">
+              <img :src="item.sito" alt="social media">
+            </li>
+          </ul>
+
         </div>
 
       </div>
@@ -46,6 +54,7 @@ export default {
   name: 'myFooter',
   data() {
     return {
+
       colonne: [
 
         {
@@ -171,6 +180,29 @@ export default {
             }
           ]
         }
+      ],
+
+      socials: [
+        {
+          sito: require("../assets/img/footer-facebook.png"),
+          url: "#"
+        },
+        {
+          sito: require("../assets/img/footer-periscope.png"),
+          url: "#"
+        },
+        {
+          sito: require("../assets/img/footer-pinterest.png"),
+          url: "#"
+        },
+        {
+          sito: require("../assets/img/footer-twitter.png"),
+          url: "#"
+        },
+        {
+          sito: require("../assets/img/footer-youtube.png"),
+          url: "#"
+        }
       ]
     }
   }
@@ -239,23 +271,52 @@ export default {
   background-color: #303030;
   position: relative;
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
 
-  .sign-up {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sign-up {
     line-height: $heightRow1;
 
-    button {
-      background-color: transparent;
-      border: 2px solid $mainColor;
-      color: white;
-      padding: 10px 15px;
-      &:hover {
-        background-color: rgba(2,130,249,0.2);
-        cursor: pointer;
+      button {
+        background-color: transparent;
+        border: 2px solid $mainColor;
+        color: white;
+        padding: 10px 15px;
+        &:hover {
+          background-color: rgba(2,130,249,0.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .social-media {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        color: $mainColor;
+        margin-right: 20px;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 5px;
+
+          img {
+            width: 30px;
+            height: auto;
+          }
+        }
       }
     }
   }
+
+  
 }
 
 </style>
