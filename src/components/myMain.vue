@@ -6,8 +6,11 @@
       <myJumbotron/>
 
       <div class="container">
-        <myCards/>
+
+        <myCards v-for="(card, index) in cards" :key="index" :nome="card.series" :url="card.thumb"/>
+
       </div>
+
     </div>
 
     <blueSection/>
@@ -114,11 +117,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../assets/css/variables.scss";
+
 .main-content {
-  
+background-color: black;
+
   .container {
-    color: white;
-    line-height: $heightRow1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
   }
 }
 

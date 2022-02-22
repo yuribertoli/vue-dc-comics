@@ -18,7 +18,7 @@ export default {
 @import "../../assets/css/variables.scss";
 
 #jumbotron {
-    height: calc($heightRow1 * 3);
+    height: $heightRow3;
     position: relative;
 
     img {
@@ -35,7 +35,7 @@ export default {
         padding: 10px 15px;
         font-weight: bold;
         position: absolute;
-        top: 90%;
+        top: 92.5%;
         left: 10%;
     }
 }

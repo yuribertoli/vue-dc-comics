@@ -1,7 +1,7 @@
 $mainColor: #0282f9;
 
 $heightRow1: 100px;
-$heightRow2: 150px;
-$heightRow3: 300px;
+$heightRow2: $heightRow1 * 1.5;
+$heightRow3: $heightRow1 * 3;
 
 
