@@ -62,31 +62,31 @@ export default {
           links: [
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Characters"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Comics"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Movies"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "TV"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Games"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Videos"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "News"
             }
           ]
         },
@@ -96,47 +96,47 @@ export default {
           links: [
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Terms Of Use"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Privacy policy (New)"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Ad Choices"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Advertising"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Jobs"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Subscriptions"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Talent Workshops"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "CPSC Certificates"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Ratings"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Shop Help"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Contact Us"
             }
           ]
         },
@@ -146,23 +146,23 @@ export default {
           links: [
             {
             url: "#",
-            nome: "Lorem"
+            nome: "DC"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "MAD Magazine"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "DC Kids"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "DC Universe"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "DC Power Visa"
             }
           ]
         },
@@ -172,11 +172,11 @@ export default {
           links: [
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Shop DC"
             },
             {
             url: "#",
-            nome: "Lorem"
+            nome: "Shop DC Collectibles"
             }
           ]
         }

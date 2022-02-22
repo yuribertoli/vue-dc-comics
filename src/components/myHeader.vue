@@ -10,7 +10,7 @@
         <ul>
 
           <li v-for="(item, index) in navbar" :key="index">
-            <a :class="item.current? 'active' : '' " :href="item.url">{{item.text}}</a>
+            <a @click="attivo(index)" :class="{'active': activeIndex === index}" :href="item.url">{{item.text}}</a>
           </li>
           
         </ul>
@@ -28,60 +28,61 @@ export default {
   data() {
     return {
 
+      activeIndex: 1,
+
       navbar: [
         {
           text: "characters",
-          url: "#",
-          current: false
+          url: "https://www.google.com/"
         },
         {
           text: "comics",
-          url: "#",
-          current: true
+          url: "#"
         },
         {
           text: "movies",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "tv",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "games",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "collectibles",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "videos",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "fans",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "news",
-          url: "#",
-          current: false
+          url: "#"
         },
         {
           text: "shop",
-          url: "#",
-          current: false
+          url: "#"
         },
       ]
 
     }
+  },
+
+  methods: {
+    
+    attivo(indice) {
+      this.activeIndex = indice;
+      this.$router.push(this.navbar[indice].url)
+    }
+
   }
 }
 </script>
@@ -114,7 +115,8 @@ header {
       font-size: 0.7rem;
       padding: 0 10px;
         &:hover {
-        background-color: azure;
+        background-color: rgba(2,130,249,0.1);
+        border-bottom: 5px solid $mainColor;
         }
     }
   }

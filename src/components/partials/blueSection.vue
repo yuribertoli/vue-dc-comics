@@ -23,27 +23,27 @@ export default {
     return {
       infos: [
         {
-        img: require("../assets/img/buy-comics-digital-comics.png"),
+        img: require("../../assets/img/buy-comics-digital-comics.png"),
         url: "#",
         text: "digital comics"
         },
         {
-        img: require("../assets/img/buy-comics-merchandise.png"),
+        img: require("../../assets/img/buy-comics-merchandise.png"),
         url: "#",
         text: "dc merchandise"
         },
         {
-        img: require("../assets/img/buy-comics-subscriptions.png"),
+        img: require("../../assets/img/buy-comics-subscriptions.png"),
         url: "#",
         text: "subscription"
         },
         {
-        img: require("../assets/img/buy-comics-shop-locator.png"),
+        img: require("../../assets/img/buy-comics-shop-locator.png"),
         url: "#",
         text: "comic shop locator"
         },
         {
-        img: require("../assets/img/buy-dc-power-visa.svg"),
+        img: require("../../assets/img/buy-dc-power-visa.svg"),
         url: "#",
         text: "dc power visa"
         }
@@ -55,7 +55,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../assets/css/variables.scss";
+@import "../../assets/css/variables.scss";
 
 .info {
   background-color: $mainColor;
