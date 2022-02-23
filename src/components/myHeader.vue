@@ -7,13 +7,16 @@
 
     <div class="right-header">
       <nav>
-        <ul>
+        <ul v-if="$mq === 'lg'">
 
           <li v-for="(item, index) in navbar" :key="index">
             <a @click="attivo(index)" :class="{'active': activeIndex === index}" :href="item.url">{{item.text}}</a>
           </li>
           
         </ul>
+        <div class="burger-menu" v-else>
+          <font-awesome-icon icon="fa-solid fa-bars" />
+        </div>
       </nav>
     </div>
     
@@ -33,7 +36,7 @@ export default {
       navbar: [
         {
           text: "characters",
-          url: "https://www.google.com/"
+          url: "#"
         },
         {
           text: "comics",
@@ -125,6 +128,21 @@ header {
 .active {
   color: $mainColor;
   border-bottom: 5px solid $mainColor;
+}
+
+.burger-menu{
+  height: $heightRow1;
+  display: flex;
+  align-items: center;
+
+  .fa-bars {
+  width: 50px;
+  height: 50px;
+  color: $mainColor;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 </style>

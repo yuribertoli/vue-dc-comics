@@ -91,4 +91,36 @@ export default {
   }
 }
 
+@media (max-width: 900px) {
+
+    li {
+        flex-direction: column;
+        justify-content: center;
+
+        .smaller {
+          margin-bottom: 10px;
+          transform: translateY(10px);
+        }
+    }
+
+}
+
+@media (max-width: 730px) {
+
+  .container {
+    overflow-x: hidden;
+    li {
+      margin: 0 30px;
+    }
+  }
+    
+}
+
+@media (max-width: 600px) {
+
+  .container li {
+      margin: 0 110px;
+  }
+}
+
 </style>

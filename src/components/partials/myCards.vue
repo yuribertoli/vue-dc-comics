@@ -42,4 +42,36 @@ export default {
     }
 }
 
+@media (max-width: 900px) {
+
+    .cards {
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cards {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .cards {
+        width: 100%;
+
+        h4 {
+        font-size: 0.9rem;
+        }
+
+        img {
+            height: 80%;
+        }
+    }
+
+}
+
 </style>
